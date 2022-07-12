@@ -6,10 +6,10 @@
 #include <stdarg.h>
 
 /**
- * struct convert - defines a structure for symbols and functions.
- * @sym: The operator.
- * @f: function associated.
- */
+* struct convert - defines a structure for symbols and functions
+* @sym: The operator
+* @f: The function associated
+*/
 struct convert
 {
 	char *sym;
@@ -17,7 +17,7 @@ struct convert
 };
 typedef struct convert conver_t;
 
-/*The functions*/
+/*Main functions*/
 int parser(const char *format, conver_t f_list[], va_list arg_list);
 int _printf(const char *format, ...);
 int _write_char(char);
