@@ -3,7 +3,7 @@
 
 #include <unistd.h>
 #include <stdlib.h>
-#include <stderg.h>
+#include <stdarg.h>
 
 /**
  * struct convert - defines a structure for symbols and functions.
