@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf - prints anything formated, be it chars, integers etc.
+ * _printf - prints anything.
  * @format: a string containing all the desired characters.
  * @...: variadic parameters.
  * Return: number of characters printed.
@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg_list, format);
-
+	/*Calling parser function*/
 	printed_chars = parser(format, f_list, arg_list);
 	va_end(arg_list);
 	return (printed_chars);
